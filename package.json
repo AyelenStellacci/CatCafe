@@ -1,0 +1,17 @@
+{
+  "name": "catcafe",
+  "version": "1.0.0",
+  "description": "Pagina de practica sobre un cafe de gatos utilizando HTML, CSS y Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Ayelen Stellacci",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
