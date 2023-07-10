@@ -1,1 +1,15 @@
 npm run watch-css
+<!-- Comentario HTML -->
+// Comentario de una linea de scss y Javascript
+/* Comentario multilinea de scss y Javascript */
+
+[]
+Javascript
+`` Backtips
+Concatenar
+`soy ${nombre} y estoy caminando`
+
+
+Ideas para la pagina=
+*En la parte de contacto poner un video de fondo:
+    https://beacons.ai/catcafebuenosaires
