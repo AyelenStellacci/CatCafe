@@ -13,39 +13,142 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="index__logo">
-          <a class="navbar-logo" href="./index.html"><img src="./recursos/iconos/icono gato- 192x192.png" alt="Home"></a>
-        </div>
+  <header>
+    <div class="div__header">
+      <a href="./index.html"><img class="logoGato" src="./recursos/iconos/logo-gato.png" alt=""></a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light .flex-lg-column">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav justify-content-end">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./paginas/nosotros.html">Sobre Nosotros</a>
+                <a class="nav-link active" aria-current="page" href="./paginas/nosotros.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./paginas/menu.html">Menú</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./paginas/gatos.html">Nuestros Gatos</a>
+                <a class="nav-link active" aria-current="page" href="./paginas/gatos.html">Our Michis</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./paginas/contacto.html">Contacto</a>
+                <a class="nav-link active" aria-current="page" href="./paginas/contacto.html">Contact Us</a>
               </li>
-              
             </ul>
           </div>
         </div>
       </nav>
-    </header>
-    <main>
-        <h1>Ayet Cat Cafe</h1>
-    </main>
-    <footer></footer>
+  </header>
+  <main class="index__main">
+    <div id="carouselExampleCaptions" class="carousel slide carousel" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./recursos/imagenes/gato-carrousel.jpg" class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Adorable cats and comforting coffee</h5>
+            <p>Visit our cat café and enjoy the delight of interacting with our playful and adorable kittens!</p>
+            <button class="btn btn-primary">Meet our kittens</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./recursos/imagenes/mostrador-carrousel.jpg" class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Pleasure for dessert lovers</h5>
+            <p>Give in to the temptation of our irresistible selection of homemade desserts!</p>
+            <button class="btn btn-primary">See our menú</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./recursos/imagenes/cafeteria-carrousel.jpg" class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>The perfect place for a coffee break</h5>
+            <p>Café with cats: a unique experience. Reserve your spot and indulge in moments of pure happiness!</p>
+            <button class="btn btn-primary">Book now</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="bloque1">
+      <img class="imagen-patitas-vertical" src="./recursos/imagenes/patitas-vertical.png" alt="">
+      <div class="texto">
+        <h1>Between purring and a coffee</h1>
+        <p>The Crazy Cat Café is born from a great love, the love for cats, 
+          and an unforgettable experience in a Neko Café in Osaka, Japan. In October 
+          2015, the first and only Cat Café in Lombardy opens in Milan, aiming to 
+          recreate the intimate atmosphere of Japanese neko cafés while adapting it 
+          to the rhythms and lifestyle of Italy, where the absolute masters are the 
+          nine cats that live inside the establishment.</p>
+      </div>
+      <img class="imagen-patitas-vertical" src="./recursos/imagenes/patitas-vertical.png" alt="">
+    </div>
+    <div class="bloque2">
+      <div class="titulo">
+        <h1>Our Menú</h1>
+      </div>
+      <div class="menu">
+        <div class="opciones-menu">
+          <a href="./paginas/Café-&-Bakery.html"><img class="imagenes-menu" src="./recursos/menu/portada-desayuno.png" alt=""></a>
+          <h5><b>Café & Bakery</b></h5>
+        </div>
+        <div class="opciones-menu">
+          <a href="./paginas/brunch.html"><img class="imagenes-menu" src="./recursos/menu/portada-brunch.png" alt=""></a>
+          <h5><b>Brunch</b></h5>
+        </div>
+        <div class="opciones-menu">
+          <a href="./paginas/lunch.html"><img class="imagenes-menu" src="./recursos/menu/portada-almuerzo.png" alt=""></a>
+          <h5><b>Lunch</b></h5>
+        </div>
+        <div class="opciones-menu">
+          <a href="./paginas/drinks.html"><img class="imagenes-menu" src="./recursos/menu/portada-tragos.png" alt=""></a>
+          <h5><b>Drinks</b></h5>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="info">
+        <div class="informacion-contacto">
+            <div class="divInfo">
+              <img class="icono-footer" src="./recursos/iconos/ubicacion.png" alt="">
+              <p>654 Fake Street, New York</p>
+            </div>
+            <div class="divInfo">
+              <img class="icono-footer" src="./recursos/iconos/telefono.png" alt="">
+              <p>123-456-7890</p>
+            </div>
+            <div class="divInfo">
+              <img class="icono-footer" src="./recursos/iconos/sobre.png" alt="">
+              <p>info@AyeCatCafé.com</p>
+            </div>
+        </div>
+        <div class="footerLogo">
+          <img src="./recursos/iconos/logo-gato.png" alt="">
+        </div>
+        <div class="horario">
+            <h5><b>Opening Hours</b></h5>
+            <p>Thuesday to Friday: 08:00 AM - 11:00 PM</p>
+            <p>Saturdays and Sundays: 01:00 PM - 11:00 PM</p>
+        </div>
+    </div>
+    <div class="derechos">
+          <p class="">© 2023 Your Café. All rights reserved.</p>
+    </div>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>

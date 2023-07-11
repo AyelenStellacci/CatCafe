@@ -3,6 +3,92 @@
 @import 'footer';
 
 
+//
+
 *{
-    background-color: #FBB5BD;
+    margin: 0px;
+    padding: 0px;
+}
+.index{
+    &__main{
+        background-color: $color-fondo;
+        .carousel{
+            display: flex;
+            .c-item{
+                height: 580px;
+                .c-img{
+                    height: 100%;
+                    object-fit: cover;
+                    filter: brightness(0.6);
+                }
+                .carousel-caption{
+                    .btn-primary{
+                        background-color: $color-header;
+                        border-color: $color-header;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    
+        .bloque1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            .imagen-patitas-vertical{
+                width: 5%;
+            }
+            .texto{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                h1{
+                    font-family: $letra-titulos;
+                    color: $color-titulos;
+                    margin-bottom: 20px;
+                }
+                p{
+                    width: 60%;
+                    font-family: $letra-textos;
+                    text-align: justify;
+                    margin: 0px;
+                }
+            }
+        }
+        .bloque2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            .titulo{
+                font-family: $letra-titulos;
+                    color: $color-titulos;
+                    padding-bottom: 20px;
+            }
+           .menu{
+            display: flex;
+            flex-direction: row;
+            .opciones-menu{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: justify;
+                margin: 25px;
+                font-family: $letra-textos;
+                color: $color-titulos;
+                .imagenes-menu{
+                    width: 200px;
+                    height: 200px;
+                    margin-bottom: 10px;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,55 +1,147 @@
 /* Header */
-header nav {
+header {
   display: flex;
-  flex-direction: row-reverse; }
-  header nav .container-fluid {
-    background-color: aquamarine; }
-    header nav .container-fluid .collapse navbar-collapse {
-      background-color: chocolate; }
-
-/*.header__menu{
+  background-color: #FBB5BD;
+  justify-content: space-between;
+  font-display: block; }
+  header .navbar navbar-expand-lg navbar-light {
     display: flex;
-}
-
-ul{
+    background-color: #FBB5BD;
+    padding: 10px;
+    justify-content: flex-end; }
+  header .navbar-light-active-color {
+    font-family: "Zilla Slab", serif; }
+  header .nav-link {
     display: flex;
-}
-li{
-    list-style: none;
-}
-a{
+    justify-content: flex-end;
+    color: white;
+    font-family: "Zilla Slab", serif;
+    font-size: 1.5rem;
+    margin: 5px; }
+    header .nav-link:hover {
+      transform: scale(1.1);
+      color: white; }
+  header .navbar-light .navbar-nav .nav-link.active {
+    color: white; }
+  header .div__header {
+    display: flex;
+    margin: 20px; }
+    header .div__header .logoGato {
+      width: 60%; }
+  header .container-fluid {
+    display: flex;
+    color: white; }
+  header .navbar > .container-fluid {
+    display: flex;
+    justify-content: flex-end; }
+  header .navbar-toggler:focus {
+    box-shadow: none; }
+  header a {
     text-decoration: none;
-    margin: 20px;
-    font-weight: 500;
-}
-.bg-body-tertiary {
-    --bs-bg-opacity: 0;
-    background-color: $color-fondo;
-}
-.container-fluid{
+    color: white;
+    font-weight: 500; }
+    header a :hover {
+      color: white; }
+  header li {
+    list-style: none; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  font-family: "Zilla Slab", serif;
+  color: white;
+  padding-top: 15px; }
+  footer .info {
     display: flex;
-    flex-direction: row-reverse;
-}
-.nav-link dropdown-toggle{
-    color: $color-letras;
-}
-.dropdown-menu{
-    background-color: $color-letras;
-}
-.dropdown-item{
-    width: fit-content;
-    color: white;
-    &:hover{
-    background-color: $color-letras;
-    color: white;
-    transform: scale(1.2);
-    }
-}
-.nav-link{
-    color: $color-letras;
-    &:hover{
-        transform: scale(1.2);
-        }
-} */
+    flex-direction: row;
+    justify-content: space-evenly; }
+    footer .info .informacion-contacto {
+      display: flex;
+      flex-direction: column; }
+      footer .info .informacion-contacto .divInfo {
+        display: flex;
+        flex-direction: row; }
+        footer .info .informacion-contacto .divInfo .icono-footer {
+          margin: 3px 5px 3px 0px;
+          width: 6%;
+          height: 50%; }
+    footer .info .footerLogo {
+      display: flex;
+      justify-content: center; }
+      footer .info .footerLogo img {
+        width: 60%;
+        height: 60%; }
+    footer .info .horario {
+      display: flex;
+      flex-direction: column; }
+  footer .derechos {
+    display: flex;
+    justify-content: center; }
+
 * {
-  background-color: #FBB5BD; }
+  margin: 0px;
+  padding: 0px; }
+
+.index__main {
+  background-color: #ffe4e8; }
+  .index__main .carousel {
+    display: flex; }
+    .index__main .carousel .c-item {
+      height: 580px; }
+      .index__main .carousel .c-item .c-img {
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.6); }
+      .index__main .carousel .c-item .carousel-caption .btn-primary {
+        background-color: #FBB5BD;
+        border-color: #FBB5BD;
+        border-radius: 10px; }
+  .index__main .bloque1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px; }
+    .index__main .bloque1 .imagen-patitas-vertical {
+      width: 5%; }
+    .index__main .bloque1 .texto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%; }
+      .index__main .bloque1 .texto h1 {
+        font-family: "Caveat", cursive;
+        color: #E57D90;
+        margin-bottom: 20px; }
+      .index__main .bloque1 .texto p {
+        width: 60%;
+        font-family: "Zilla Slab", serif;
+        text-align: justify;
+        margin: 0px; }
+  .index__main .bloque2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; }
+    .index__main .bloque2 .titulo {
+      font-family: "Caveat", cursive;
+      color: #E57D90;
+      padding-bottom: 20px; }
+    .index__main .bloque2 .menu {
+      display: flex;
+      flex-direction: row; }
+      .index__main .bloque2 .menu .opciones-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        margin: 25px;
+        font-family: "Zilla Slab", serif;
+        color: #E57D90; }
+        .index__main .bloque2 .menu .opciones-menu .imagenes-menu {
+          width: 200px;
+          height: 200px;
+          margin-bottom: 10px; }
+          .index__main .bloque2 .menu .opciones-menu .imagenes-menu:hover {
+            transform: scale(1.1); }

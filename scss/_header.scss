@@ -1,61 +1,61 @@
 /* Header */
-
 header{
-    nav{
-        display: flex;
-        flex-direction: row-reverse;
-        .container-fluid{
-            background-color: aquamarine;
-            .collapse navbar-collapse{
-                background-color: chocolate;
+    display: flex;
+    background-color: $color-header;
+    justify-content: space-between;
+    font-display: block;
+        .navbar navbar-expand-lg navbar-light{
+            display: flex;
+            background-color: $color-header;
+            padding: 10px;
+            justify-content: flex-end;
+        }
+        .navbar-light-active-color{
+            font-family: $letra-textos;
+        }
+        .nav-link{
+            display: flex;
+            justify-content: flex-end;
+            color: white;
+            font-family: $letra-textos;
+            font-size: 1.5rem;
+            margin: 5px;
+                &:hover{
+                    transform: scale(1.1);
+                    color: white;
+                }
+        }
+        .navbar-light .navbar-nav .nav-link.active{
+            color: white;
+        }
+        .div__header{
+            display: flex;
+            margin: 20px;
+            .logoGato{
+                width: 60%;
             }
         }
-    }
-}
-
-
-
-/*.header__menu{
-    display: flex;
-}
-
-ul{
-    display: flex;
-}
-li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    margin: 20px;
-    font-weight: 500;
-}
-.bg-body-tertiary {
-    --bs-bg-opacity: 0;
-    background-color: $color-fondo;
-}
-.container-fluid{
-    display: flex;
-    flex-direction: row-reverse;
-}
-.nav-link dropdown-toggle{
-    color: $color-letras;
-}
-.dropdown-menu{
-    background-color: $color-letras;
-}
-.dropdown-item{
-    width: fit-content;
-    color: white;
-    &:hover{
-    background-color: $color-letras;
-    color: white;
-    transform: scale(1.2);
-    }
-}
-.nav-link{
-    color: $color-letras;
-    &:hover{
-        transform: scale(1.2);
+        .container-fluid{
+            display: flex;
+            color: white;
         }
-} */
+        .navbar>.container-fluid{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .navbar-toggler:focus {
+            box-shadow: none;
+            }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+                :hover{
+                    color: white;
+                }
+        }
+
+        li{
+            list-style: none;
+        }
+}

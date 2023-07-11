@@ -1,0 +1,44 @@
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    font-family: $letra-textos;
+    color: $color-letras;
+    padding-top: 15px;
+    //background: url(footer.JPG);
+        .info{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .informacion-contacto{
+                display: flex;
+                flex-direction: column;
+                .divInfo{
+                    display: flex;
+                    flex-direction: row;
+                    .icono-footer{
+                        margin: 3px 5px 3px 0px;
+                        width: 6%;
+                        height: 50%;
+                    }
+                }
+            }
+            .footerLogo{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 60%;
+                    height: 60%;
+                }
+            }
+            .horario{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .derechos{
+            display: flex;
+            justify-content: center;
+        }
+}
