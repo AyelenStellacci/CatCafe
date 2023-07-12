@@ -12,6 +12,34 @@
 .index{
     &__main{
         background-color: $color-fondo;
+        h1{
+            font-family: $letra-titulos;
+            color: $color-letras;
+            font-size: 2.5rem;
+        }
+        h2{
+            font-family: $letra-titulos;
+            color: $color-titulos;
+            font-size: 2.5rem;
+        }
+        h3{
+            font-family: $letra-titulos;
+            color: $color-titulos;
+            font-size: 2rem;
+        }
+        h4{
+            font-family: $letra-textos;
+            color: $color-titulos;
+        }
+        h5{
+            font-family: $letra-textos;
+            color: $color-letras;
+        }
+        p{
+            font-family: $letra-textos;
+            text-align: justify;
+            color: black;
+        }
         .carousel{
             display: flex;
             .c-item{
@@ -26,17 +54,17 @@
                         background-color: $color-header;
                         border-color: $color-header;
                         border-radius: 10px;
+                        margin: 20px 0px 20px 0px;
                     }
                 }
             }
         }
-    
         .bloque1{
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            padding: 30px;
+            padding: 20px 40px 50px 40px;
             .imagen-patitas-vertical{
                 width: 5%;
             }
@@ -44,17 +72,9 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 50%;
-                h1{
-                    font-family: $letra-titulos;
-                    color: $color-titulos;
-                    margin-bottom: 20px;
-                }
+                width: 60%;
                 p{
                     width: 60%;
-                    font-family: $letra-textos;
-                    text-align: justify;
-                    margin: 0px;
                 }
             }
         }
@@ -62,23 +82,17 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
-            .titulo{
-                font-family: $letra-titulos;
-                    color: $color-titulos;
-                    padding-bottom: 20px;
-            }
-           .menu{
+            padding: 20px 40px 50px 40px;
+            .menu{
             display: flex;
             flex-direction: row;
+            padding-bottom: 20px;
             .opciones-menu{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 text-align: justify;
                 margin: 25px;
-                font-family: $letra-textos;
-                color: $color-titulos;
                 .imagenes-menu{
                     width: 200px;
                     height: 200px;
@@ -87,6 +101,92 @@
                         transform: scale(1.1);
                     }
                     }
+                }
+            }
+            .boton-reserva{
+                .botont{
+                    background-color: $color-titulos;
+                    border-color: $color-titulos;
+                    color: $color-letras;
+                    padding: 10px 15px 10px 15px;
+                    border-radius: 10px;
+                }
+            }
+
+        }
+        .patas-divisorias{
+            display: flex;
+            justify-content: center;
+            margin: 20px 0px 20px 0px;
+            .patas{
+                width: 15%;
+            }
+        }
+        .bloque3{
+            display: flex;
+            flex-direction: column;
+            padding: 50px 40px 50px 40px;
+            .texto-reglas{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .reglas{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                .regla{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 18%;
+                    margin: 0px 30px 0px 30px;
+                    .imagen-regla{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        .bloque4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 40px 50px 40px;
+            .titulo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+                p{
+                    margin: 15px 0px 20px 0px;
+                }
+            }
+            .michis{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                .michi-individual{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 40px;
+                    width: 25%;
+                    .foto-gato {
+                        width: 85%;
+                    }
+                }
+            } 
+            .boton-michi{
+                .botont{
+                    background-color: $color-titulos;
+                    border-color: $color-titulos;
+                    color: $color-letras;
+                    padding: 10px 15px 10px 15px;
+                    border-radius: 10px;
                 }
             }
         }

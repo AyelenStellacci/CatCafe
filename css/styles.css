@@ -85,6 +85,28 @@ footer {
 
 .index__main {
   background-color: #ffe4e8; }
+  .index__main h1 {
+    font-family: "Caveat Brush", cursive;
+    color: white;
+    font-size: 2.5rem; }
+  .index__main h2 {
+    font-family: "Caveat Brush", cursive;
+    color: #E57D90;
+    font-size: 2.5rem; }
+  .index__main h3 {
+    font-family: "Caveat Brush", cursive;
+    color: #E57D90;
+    font-size: 2rem; }
+  .index__main h4 {
+    font-family: "Zilla Slab", serif;
+    color: #E57D90; }
+  .index__main h5 {
+    font-family: "Zilla Slab", serif;
+    color: white; }
+  .index__main p {
+    font-family: "Zilla Slab", serif;
+    text-align: justify;
+    color: black; }
   .index__main .carousel {
     display: flex; }
     .index__main .carousel .c-item {
@@ -96,52 +118,107 @@ footer {
       .index__main .carousel .c-item .carousel-caption .btn-primary {
         background-color: #FBB5BD;
         border-color: #FBB5BD;
-        border-radius: 10px; }
+        border-radius: 10px;
+        margin: 20px 0px 20px 0px; }
   .index__main .bloque1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 30px; }
+    padding: 20px 40px 50px 40px; }
     .index__main .bloque1 .imagen-patitas-vertical {
       width: 5%; }
     .index__main .bloque1 .texto {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 50%; }
-      .index__main .bloque1 .texto h1 {
-        font-family: "Caveat", cursive;
-        color: #E57D90;
-        margin-bottom: 20px; }
+      width: 60%; }
       .index__main .bloque1 .texto p {
-        width: 60%;
-        font-family: "Zilla Slab", serif;
-        text-align: justify;
-        margin: 0px; }
+        width: 60%; }
   .index__main .bloque2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px; }
-    .index__main .bloque2 .titulo {
-      font-family: "Caveat", cursive;
-      color: #E57D90;
-      padding-bottom: 20px; }
+    padding: 20px 40px 50px 40px; }
     .index__main .bloque2 .menu {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      padding-bottom: 20px; }
       .index__main .bloque2 .menu .opciones-menu {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: justify;
-        margin: 25px;
-        font-family: "Zilla Slab", serif;
-        color: #E57D90; }
+        margin: 25px; }
         .index__main .bloque2 .menu .opciones-menu .imagenes-menu {
           width: 200px;
           height: 200px;
           margin-bottom: 10px; }
           .index__main .bloque2 .menu .opciones-menu .imagenes-menu:hover {
             transform: scale(1.1); }
+    .index__main .bloque2 .boton-reserva .botont {
+      background-color: #E57D90;
+      border-color: #E57D90;
+      color: white;
+      padding: 10px 15px 10px 15px;
+      border-radius: 10px; }
+  .index__main .patas-divisorias {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 20px 0px; }
+    .index__main .patas-divisorias .patas {
+      width: 15%; }
+  .index__main .bloque3 {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px 50px 40px; }
+    .index__main .bloque3 .texto-reglas {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .index__main .bloque3 .reglas {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .index__main .bloque3 .reglas .regla {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 18%;
+        margin: 0px 30px 0px 30px; }
+        .index__main .bloque3 .reglas .regla .imagen-regla {
+          width: 80%; }
+  .index__main .bloque4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 40px 50px 40px; }
+    .index__main .bloque4 .titulo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%; }
+      .index__main .bloque4 .titulo p {
+        margin: 15px 0px 20px 0px; }
+    .index__main .bloque4 .michis {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .index__main .bloque4 .michis .michi-individual {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 40px;
+        width: 25%; }
+        .index__main .bloque4 .michis .michi-individual .foto-gato {
+          width: 85%; }
+    .index__main .bloque4 .boton-michi .botont {
+      background-color: #E57D90;
+      border-color: #E57D90;
+      color: white;
+      padding: 10px 15px 10px 15px;
+      border-radius: 10px; }
