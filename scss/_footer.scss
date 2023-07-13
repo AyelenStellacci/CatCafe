@@ -2,25 +2,38 @@
 footer{
     display: flex;
     flex-direction: column;
-    background-color: pink;
     font-family: $letra-textos;
     color: $color-letras;
     padding-top: 15px;
-    //background: url(footer.JPG);
+    background-image: url('../recursos/imagenes/footer.jpg');
         .info{
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
-            .informacion-contacto{
+            justify-content: space-between;
+            padding: 20px;
+            .info-redes{
                 display: flex;
                 flex-direction: column;
-                .divInfo{
+                .informacion-contacto{
+                    display: flex;
+                    flex-direction: column;
+                    .divInfo{
+                        display: flex;
+                        flex-direction: row;
+                        .icono-footer{
+                            margin: 3px 5px 3px 0px;
+                            width: 6%;
+                            height: 50%;
+                        }
+                    }
+                }
+                .redes{
                     display: flex;
                     flex-direction: row;
-                    .icono-footer{
-                        margin: 3px 5px 3px 0px;
-                        width: 6%;
-                        height: 50%;
+                    .icono-redes{
+                        margin: 10px;
+                        width: 35px;
+                        height: 35px;
                     }
                 }
             }
@@ -29,7 +42,7 @@ footer{
                 justify-content: center;
                 img{
                     width: 60%;
-                    height: 60%;
+                    height: 50%;
                 }
             }
             .horario{
@@ -41,4 +54,39 @@ footer{
             display: flex;
             justify-content: center;
         }
+}
+
+@media (min-width: 340px) and (max-width: 720px){
+    footer{
+        .info{
+            display: flex;
+            padding: 0px;
+            .info-redes{
+                width: 40%;
+                justify-content: center;
+                .informacion-contacto{
+                    display: none;
+                }
+                .redes{
+                    .icono-redes {
+                        margin: 5px;
+                        ;
+                    }
+                }
+            }
+            .horario{
+                display: none;
+            }
+            .footerLogo{
+                width: 60%;
+                img{
+                    width: 60%;
+                    height: 100%;
+                }
+            }
+        }
+        .derechos{
+            margin-top: 10px;
+        }
+    }
 }

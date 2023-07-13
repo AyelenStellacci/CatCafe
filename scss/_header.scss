@@ -6,6 +6,7 @@ header{
     font-display: block;
         .navbar navbar-expand-lg navbar-light{
             display: flex;
+            width: 60%;
             background-color: $color-header;
             padding: 10px;
             justify-content: flex-end;
@@ -30,14 +31,11 @@ header{
         }
         .div__header{
             display: flex;
+            width: 40%;
             margin: 20px;
             .logoGato{
-                width: 60%;
+                width: 70%;
             }
-        }
-        .container-fluid{
-            display: flex;
-            color: white;
         }
         .navbar>.container-fluid{
             display: flex;
@@ -58,4 +56,16 @@ header{
         li{
             list-style: none;
         }
+}
+
+
+@media (min-width: 340px) and (max-width: 540px){
+    header{
+        .div__header{
+            width: 50%;
+            .logoGato{
+                width: 90%;
+            }
+        }
+    }
 }
