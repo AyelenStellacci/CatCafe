@@ -305,7 +305,8 @@ footer {
           display: flex;
           flex-direction: column; }
           .index__main .bloque3 .reglas .dos-reglas .regla {
-            width: 80%; }
+            width: 80%;
+            text-align: center; }
             .index__main .bloque3 .reglas .dos-reglas .regla .imagen-regla {
               width: 70%; }
     .index__main .bloque4 {
