@@ -121,7 +121,8 @@ footer {
   padding: 0px; }
 
 .index__main {
-  background-color: #F3D4DA; }
+  background-color: #F3D4DA;
+  align-items: center; }
   .index__main h1 {
     font-family: "Caveat Brush", cursive;
     color: white;
@@ -224,15 +225,16 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      align-items: center; }
+      align-items: flex-start; }
       .index__main .bloque3 .reglas .dos-reglas {
         display: flex;
         flex-direction: row;
-        align-items: center; }
+        align-items: flex-start;
+        width: 45%; }
         .index__main .bloque3 .reglas .dos-reglas .regla {
           display: flex;
           flex-direction: column;
-          justify-content: flex-start;
+          justify-content: center;
           align-items: center;
           width: 50%;
           margin: 0px 30px 0px 30px; }
@@ -244,7 +246,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 40px 50px 70px; }
+    padding: 50px 40px 70px 40px; }
     .index__main .bloque4 .titulo {
       display: flex;
       flex-direction: column;
@@ -256,7 +258,8 @@ footer {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: center; }
+      justify-content: center;
+      align-items: flex-start; }
       .index__main .bloque4 .michis .michi-individual {
         display: flex;
         flex-direction: column;
@@ -273,6 +276,7 @@ footer {
       padding: 10px 15px 10px 15px;
       border-radius: 10px; }
 
+/* MIXINS */
 /* MEDIA QUERIES */
 @media (min-width: 300px) and (max-width: 540px) {
   .index__main {
@@ -298,17 +302,22 @@ footer {
         flex-direction: column; }
     .index__main .bloque3 {
       padding: 30px; }
+      .index__main .bloque3 .texto-reglas {
+        width: 90%; }
       .index__main .bloque3 .reglas {
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        align-items: center; }
         .index__main .bloque3 .reglas .dos-reglas {
           display: flex;
-          flex-direction: column; }
+          flex-direction: column;
+          align-items: center;
+          width: 100%; }
           .index__main .bloque3 .reglas .dos-reglas .regla {
             width: 80%;
             text-align: center; }
-            .index__main .bloque3 .reglas .dos-reglas .regla .imagen-regla {
-              width: 70%; }
+      .index__main .bloque3 .reglas .dos-reglas .regla .imagen-regla {
+        width: 70%; }
     .index__main .bloque4 {
       display: flex;
       padding: 20px; }
@@ -317,69 +326,126 @@ footer {
         flex-direction: column; }
         .index__main .bloque4 .michis .michi-individual {
           width: 80%; }
+      .index__main .bloque4 .michis .michi-individual {
+        width: 80%; }
     .index__main .patas-divisorias .patas {
       width: 35%; } }
 
 @media (min-width: 541px) and (max-width: 720px) {
-  .index__main {
+  .index__main .carousel .c-item {
+    height: 400px; }
+  .index__main .bloque1 {
+    padding: 20px; }
+    .index__main .bloque1 .texto {
+      width: 100%; }
+      .index__main .bloque1 .texto h2 {
+        font-size: 2rem; }
+      .index__main .bloque1 .texto p {
+        width: 90%; }
+    .index__main .bloque1 .imagen-patitas-vertical {
+      display: none; }
+  .index__main .bloque2 .menu {
     display: flex;
     flex-direction: column; }
-    .index__main .carousel .c-item {
-      height: 300px; }
-    .index__main .bloque1 {
-      padding: 20px; }
-      .index__main .bloque1 .texto {
-        width: 100%; }
-        .index__main .bloque1 .texto h2 {
-          font-size: 2rem; }
-        .index__main .bloque1 .texto p {
-          width: 90%; }
-      .index__main .bloque1 .imagen-patitas-vertical {
-        display: none; }
-    .index__main .bloque2 .menu {
+    .index__main .bloque2 .menu .dos-opciones {
       display: flex;
       flex-direction: column; }
-      .index__main .bloque2 .menu .dos-opciones {
-        display: flex;
-        flex-direction: column; }
-    .index__main .bloque3 {
-      padding: 30px; }
-      .index__main .bloque3 .reglas {
-        display: flex;
-        flex-direction: column; }
-        .index__main .bloque3 .reglas .dos-reglas {
-          display: flex;
-          flex-direction: column; }
-          .index__main .bloque3 .reglas .dos-reglas .regla {
-            width: 80%; }
-            .index__main .bloque3 .reglas .dos-reglas .regla .imagen-regla {
-              width: 70%; }
-    .index__main .bloque4 {
+  .index__main .bloque3 {
+    padding: 30px; }
+    .index__main .bloque3 .texto-reglas {
+      width: 90%; }
+    .index__main .bloque3 .reglas {
       display: flex;
-      padding: 20px; }
-      .index__main .bloque4 .michis {
+      flex-direction: column;
+      align-items: center; }
+      .index__main .bloque3 .reglas .dos-reglas {
         display: flex;
-        flex-direction: column; }
-        .index__main .bloque4 .michis .michi-individual {
-          width: 80%; }
-    .index__main .patas-divisorias .patas {
-      width: 35%; } }
+        flex-direction: column;
+        align-items: center;
+        width: 100%; }
+        .index__main .bloque3 .reglas .dos-reglas .regla {
+          width: 80%;
+          text-align: center; }
+    .index__main .bloque3 .reglas .dos-reglas .regla .imagen-regla {
+      width: 50%; }
+  .index__main .bloque4 {
+    display: flex;
+    padding: 20px; }
+    .index__main .bloque4 .michis {
+      display: flex;
+      flex-direction: column; }
+      .index__main .bloque4 .michis .michi-individual {
+        width: 80%; }
+    .index__main .bloque4 .michis .michi-individual {
+      width: 70%; }
+  .index__main .patas-divisorias .patas {
+    width: 35%; } }
 
-/*@media (min-width: 720px) and (max-width: 1100px){
+@media (min-width: 720px) and (max-width: 991px) {
+  .index__main .carousel .c-item {
+    height: 500px; }
+  .index__main .bloque1 {
+    padding: 20px; }
+    .index__main .bloque1 .texto {
+      width: 100%; }
+      .index__main .bloque1 .texto h2 {
+        font-size: 2rem; }
+      .index__main .bloque1 .texto p {
+        width: 90%; }
+    .index__main .bloque1 .imagen-patitas-vertical {
+      display: none; }
+    .index__main .bloque1 .texto h2 {
+      font-size: 2.5rem; }
+  .index__main .bloque2 .menu {
+    display: flex;
+    flex-direction: column; }
+    .index__main .bloque2 .menu .dos-opciones {
+      display: flex;
+      flex-direction: column; }
+      .index__main .bloque2 .menu .dos-opciones .opciones-menu .imagenes-menu {
+        width: 250px;
+        height: 250px; }
+  .index__main .bloque2 .boton-reserva .botont {
+    font-size: 1.5rem; }
+  .index__main .patas-divisorias .patas {
+    width: 20%; }
+  .index__main .bloque3 {
+    padding: 30px; }
+    .index__main .bloque3 .texto-reglas {
+      width: 90%; }
+    .index__main .bloque3 .reglas {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .index__main .bloque3 .reglas .dos-reglas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; }
+        .index__main .bloque3 .reglas .dos-reglas .regla {
+          width: 80%;
+          text-align: center; }
+    .index__main .bloque3 .reglas .dos-reglas .regla .imagen-regla {
+      width: 40%; }
+  .index__main .bloque4 {
+    display: flex;
+    padding: 20px; }
+    .index__main .bloque4 .michis {
+      display: flex;
+      flex-direction: column; }
+      .index__main .bloque4 .michis .michi-individual {
+        width: 80%; }
+    .index__main .bloque4 .michis {
+      align-items: center; }
+      .index__main .bloque4 .michis .michi-individual {
+        width: 60%; } }
+
+/*@media (min-width: 992px) and (max-width: 1100px){
     .index{
         &__main{
             .carousel{
                 .c-item{
-                    .c-img{
-                        display: none;
-                    }
-                    .c-img-992px{
-                        display: flex;
-                        height: 100%;
-                        object-fit: cover;
-                        filter: brightness(0.6);
-                    }
-                    
+                    height: 500px;
                 }
             }
             .bloque1{
@@ -392,15 +458,15 @@ footer {
             }
             .bloque2{
                 .menu{
+                    display: flex;
+                    flex-direction: column;
                     .dos-opciones{
                         display: flex;
                         flex-direction: column;
-                        margin: 0px 20px 0px 20px;
                         .opciones-menu{
                             .imagenes-menu{
-                                &:hover{
-                                    transform: scale(1.1);
-                                }
+                                width: 300px;
+                                height: 300px;
                             }
                         }
                     }
@@ -416,7 +482,7 @@ footer {
                     width: 20%;
                 }
             }
-            .bloque3{
+.bloque3{
                 .texto-reglas{
                     display: flex;
                     width: 70%;
@@ -424,12 +490,13 @@ footer {
                 .reglas{
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     .dos-reglas{
                         display: flex;
                         flex-direction: row;
                         justify-content: center;
+                        width: 90%;
                         .regla{
-                            width: 30%;
                             .imagen-regla{
                                 width: 60%;
                             }
@@ -437,20 +504,7 @@ footer {
                     }
                 }
             }
+            }
         } 
     }
 }*/
-/*
-h1
-h2
-h3
-h4
-h5
-p
-.carousel
-.bloque1
-.bloque2
-.patas-divisorias
-.bloque3
-.bloque4
-*/

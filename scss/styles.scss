@@ -9,6 +9,7 @@
 .index{
     &__main{
         background-color: $color-fondo;
+        align-items: center;
         h1{
             font-family: $letra-titulos;
             color: $color-letras;
@@ -140,15 +141,16 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
                 .dos-reglas{
                     display: flex;
                     flex-direction: row;
-                    align-items: center;
+                    align-items: flex-start;
+                    width: 45%;
                     .regla{
                         display: flex;
                         flex-direction: column;
-                        justify-content: flex-start;
+                        justify-content: center;
                         align-items: center;
                         width: 50%;
                         margin: 0px 30px 0px 30px;
@@ -166,7 +168,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 50px 40px 50px 70px;
+            padding: 50px 40px 70px 40px;
             .titulo{
                 display: flex;
                 flex-direction: column;
@@ -181,6 +183,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
+                align-items: flex-start;
                 .michi-individual{
                     display: flex;
                     flex-direction: column;
@@ -207,8 +210,60 @@
 }
 
 
-/* MEDIA QUERIES */
+/* MIXINS */
 
+@mixin bloque1-mobile{
+    padding: 20px;
+    .texto{
+        width: 100%;
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            width: 90%;
+        }
+    }
+    .imagen-patitas-vertical{
+        display: none;
+    }
+}
+
+@mixin bloque3-mobile{
+    padding: 30px;
+    .texto-reglas{
+        width: 90%;
+    }
+    .reglas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .dos-reglas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            .regla{
+                width: 80%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@mixin bloque4-mobile{
+    display: flex;
+    padding: 20px;
+    .michis{
+        display: flex;
+        flex-direction: column;
+        .michi-individual{
+            width: 80%;
+        }
+    }
+}
+
+
+/* MEDIA QUERIES */
 @media (min-width: 300px) and (max-width: 540px){
     .index{
         &__main{
@@ -219,20 +274,8 @@
                     height: 300px;
                 }
             }
-            .bloque1{
-                padding: 20px;
-                .texto{
-                    width: 100%;
-                    h2{
-                        font-size: 2rem;
-                    }
-                    p{
-                        width: 90%;
-                    }
-                }
-                .imagen-patitas-vertical{
-                    display: none;
-                }
+            .bloque1 {
+                @include bloque1-mobile;
             }
             .bloque2{
                 .menu{
@@ -245,16 +288,10 @@
                 }
             }
             .bloque3{
-                padding: 30px;
+                @include bloque3-mobile;
                 .reglas{
-                    display: flex;
-                    flex-direction: column;
                     .dos-reglas{
-                        display: flex;
-                        flex-direction: column;
                         .regla{
-                            width: 80%;
-                            text-align: center;
                             .imagen-regla{
                                 width: 70%;
                             }
@@ -263,11 +300,8 @@
                 }
             }
             .bloque4{
-                display: flex;
-                padding: 20px;
+                @include bloque4-mobile;
                 .michis{
-                    display: flex;
-                    flex-direction: column;
                     .michi-individual{
                         width: 80%;
                     }
@@ -282,30 +316,17 @@
         
     }
 }
+
 @media (min-width: 541px) and (max-width: 720px){
     .index{
         &__main{
-            display: flex;
-            flex-direction: column;
             .carousel{
                 .c-item{
-                    height: 300px;
+                    height: 400px;
                 }
             }
-            .bloque1{
-                padding: 20px;
-                .texto{
-                    width: 100%;
-                    h2{
-                        font-size: 2rem;
-                    }
-                    p{
-                        width: 90%;
-                    }
-                }
-                .imagen-patitas-vertical{
-                    display: none;
-                }
+            .bloque1 {
+                @include bloque1-mobile;
             }
             .bloque2{
                 .menu{
@@ -318,30 +339,22 @@
                 }
             }
             .bloque3{
-                padding: 30px;
+                @include bloque3-mobile;
                 .reglas{
-                    display: flex;
-                    flex-direction: column;
                     .dos-reglas{
-                        display: flex;
-                        flex-direction: column;
                         .regla{
-                            width: 80%;
                             .imagen-regla{
-                                width: 70%;
+                                width: 50%;
                             }
                         }
                     }
                 }
             }
             .bloque4{
-                display: flex;
-                padding: 20px;
+                @include bloque4-mobile;
                 .michis{
-                    display: flex;
-                    flex-direction: column;
                     .michi-individual{
-                        width: 80%;
+                        width: 70%;
                     }
                 }
             }
@@ -351,24 +364,82 @@
                 }
             }
         }
-        
     }
 }
-/*@media (min-width: 720px) and (max-width: 1100px){
+
+@media (min-width: 720px) and (max-width: 991px){
     .index{
         &__main{
             .carousel{
                 .c-item{
-                    .c-img{
-                        display: none;
+                    height: 500px;
+                }
+            }
+            .bloque1{
+                @include bloque1-mobile;
+                .texto{
+                    h2{
+                        font-size: 2.5rem;
                     }
-                    .c-img-992px{
+                }
+            }
+            .bloque2{
+                .menu{
+                    display: flex;
+                    flex-direction: column;
+                    .dos-opciones{
                         display: flex;
-                        height: 100%;
-                        object-fit: cover;
-                        filter: brightness(0.6);
+                        flex-direction: column;
+                        .opciones-menu{
+                            .imagenes-menu{
+                                width: 250px;
+                                height: 250px;
+                            }
+                        }
                     }
-                    
+                }
+                .boton-reserva{
+                    .botont{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .patas-divisorias{
+                .patas{
+                    width: 20%;
+                }
+            }
+            .bloque3{
+                @include bloque3-mobile;
+                .reglas{
+                    .dos-reglas{
+                        .regla{
+                            .imagen-regla{
+                                width: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+            .bloque4{
+                @include bloque4-mobile;
+                .michis{
+                    align-items: center;
+                    .michi-individual{
+                        width: 60%;
+                    }
+                }
+            }
+        } 
+    }
+}
+
+/*@media (min-width: 992px) and (max-width: 1100px){
+    .index{
+        &__main{
+            .carousel{
+                .c-item{
+                    height: 500px;
                 }
             }
             .bloque1{
@@ -381,15 +452,15 @@
             }
             .bloque2{
                 .menu{
+                    display: flex;
+                    flex-direction: column;
                     .dos-opciones{
                         display: flex;
                         flex-direction: column;
-                        margin: 0px 20px 0px 20px;
                         .opciones-menu{
                             .imagenes-menu{
-                                &:hover{
-                                    transform: scale(1.1);
-                                }
+                                width: 300px;
+                                height: 300px;
                             }
                         }
                     }
@@ -405,7 +476,7 @@
                     width: 20%;
                 }
             }
-            .bloque3{
+.bloque3{
                 .texto-reglas{
                     display: flex;
                     width: 70%;
@@ -413,12 +484,13 @@
                 .reglas{
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     .dos-reglas{
                         display: flex;
                         flex-direction: row;
                         justify-content: center;
+                        width: 90%;
                         .regla{
-                            width: 30%;
                             .imagen-regla{
                                 width: 60%;
                             }
@@ -426,21 +498,7 @@
                     }
                 }
             }
+            }
         } 
     }
 }*/
-
-/*
-h1
-h2
-h3
-h4
-h5
-p
-.carousel
-.bloque1
-.bloque2
-.patas-divisorias
-.bloque3
-.bloque4
-*/
