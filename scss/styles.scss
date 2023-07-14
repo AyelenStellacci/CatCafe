@@ -24,6 +24,7 @@
             font-family: $letra-titulos;
             color: $color-titulos;
             font-size: 2rem;
+            text-align: center;
         }
         h4{
             font-family: $letra-textos;
@@ -376,10 +377,10 @@
                 }
             }
             .bloque1{
-                @include bloque1-mobile;
                 .texto{
-                    h2{
-                        font-size: 2.5rem;
+                    width: 70%;
+                    p{
+                        width: 70%;
                     }
                 }
             }
@@ -389,7 +390,7 @@
                     flex-direction: column;
                     .dos-opciones{
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
                         .opciones-menu{
                             .imagenes-menu{
                                 width: 250px;
@@ -410,12 +411,22 @@
                 }
             }
             .bloque3{
-                @include bloque3-mobile;
+                .texto-reglas{
+                    display: flex;
+                    width: 80%;
+                }
                 .reglas{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     .dos-reglas{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        width: 90%;
                         .regla{
                             .imagen-regla{
-                                width: 40%;
+                                width: 60%;
                             }
                         }
                     }
@@ -434,7 +445,7 @@
     }
 }
 
-/*@media (min-width: 992px) and (max-width: 1100px){
+@media (min-width: 992px) and (max-width: 1100px){
     .index{
         &__main{
             .carousel{
@@ -456,11 +467,11 @@
                     flex-direction: column;
                     .dos-opciones{
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
                         .opciones-menu{
                             .imagenes-menu{
-                                width: 300px;
-                                height: 300px;
+                                width: 230px;
+                                height: 230px;
                             }
                         }
                     }
@@ -473,10 +484,10 @@
             }
             .patas-divisorias{
                 .patas{
-                    width: 20%;
+                    width: 17%;
                 }
             }
-.bloque3{
+            .bloque3{
                 .texto-reglas{
                     display: flex;
                     width: 70%;
@@ -498,7 +509,6 @@
                     }
                 }
             }
-            }
         } 
     }
-}*/
+}

@@ -134,7 +134,8 @@ footer {
   .index__main h3 {
     font-family: "Caveat Brush", cursive;
     color: #E57D90;
-    font-size: 2rem; }
+    font-size: 2rem;
+    text-align: center; }
   .index__main h4 {
     font-family: "Zilla Slab", serif;
     color: #E57D90; }
@@ -384,24 +385,16 @@ footer {
 @media (min-width: 720px) and (max-width: 991px) {
   .index__main .carousel .c-item {
     height: 500px; }
-  .index__main .bloque1 {
-    padding: 20px; }
-    .index__main .bloque1 .texto {
-      width: 100%; }
-      .index__main .bloque1 .texto h2 {
-        font-size: 2rem; }
-      .index__main .bloque1 .texto p {
-        width: 90%; }
-    .index__main .bloque1 .imagen-patitas-vertical {
-      display: none; }
-    .index__main .bloque1 .texto h2 {
-      font-size: 2.5rem; }
+  .index__main .bloque1 .texto {
+    width: 70%; }
+    .index__main .bloque1 .texto p {
+      width: 70%; }
   .index__main .bloque2 .menu {
     display: flex;
     flex-direction: column; }
     .index__main .bloque2 .menu .dos-opciones {
       display: flex;
-      flex-direction: column; }
+      flex-direction: row; }
       .index__main .bloque2 .menu .dos-opciones .opciones-menu .imagenes-menu {
         width: 250px;
         height: 250px; }
@@ -409,24 +402,20 @@ footer {
     font-size: 1.5rem; }
   .index__main .patas-divisorias .patas {
     width: 20%; }
-  .index__main .bloque3 {
-    padding: 30px; }
-    .index__main .bloque3 .texto-reglas {
-      width: 90%; }
-    .index__main .bloque3 .reglas {
+  .index__main .bloque3 .texto-reglas {
+    display: flex;
+    width: 80%; }
+  .index__main .bloque3 .reglas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .index__main .bloque3 .reglas .dos-reglas {
       display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .index__main .bloque3 .reglas .dos-reglas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%; }
-        .index__main .bloque3 .reglas .dos-reglas .regla {
-          width: 80%;
-          text-align: center; }
-    .index__main .bloque3 .reglas .dos-reglas .regla .imagen-regla {
-      width: 40%; }
+      flex-direction: row;
+      justify-content: center;
+      width: 90%; }
+      .index__main .bloque3 .reglas .dos-reglas .regla .imagen-regla {
+        width: 60%; }
   .index__main .bloque4 {
     display: flex;
     padding: 20px; }
@@ -440,71 +429,37 @@ footer {
       .index__main .bloque4 .michis .michi-individual {
         width: 60%; } }
 
-/*@media (min-width: 992px) and (max-width: 1100px){
-    .index{
-        &__main{
-            .carousel{
-                .c-item{
-                    height: 500px;
-                }
-            }
-            .bloque1{
-                .texto{
-                    width: 70%;
-                    p{
-                        width: 70%;
-                    }
-                }
-            }
-            .bloque2{
-                .menu{
-                    display: flex;
-                    flex-direction: column;
-                    .dos-opciones{
-                        display: flex;
-                        flex-direction: column;
-                        .opciones-menu{
-                            .imagenes-menu{
-                                width: 300px;
-                                height: 300px;
-                            }
-                        }
-                    }
-                }
-                .boton-reserva{
-                    .botont{
-                        font-size: 1.7rem;
-                    }
-                }
-            }
-            .patas-divisorias{
-                .patas{
-                    width: 20%;
-                }
-            }
-.bloque3{
-                .texto-reglas{
-                    display: flex;
-                    width: 70%;
-                }
-                .reglas{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    .dos-reglas{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        width: 90%;
-                        .regla{
-                            .imagen-regla{
-                                width: 60%;
-                            }
-                        }
-                    }
-                }
-            }
-            }
-        } 
-    }
-}*/
+@media (min-width: 992px) and (max-width: 1100px) {
+  .index__main .carousel .c-item {
+    height: 500px; }
+  .index__main .bloque1 .texto {
+    width: 70%; }
+    .index__main .bloque1 .texto p {
+      width: 70%; }
+  .index__main .bloque2 .menu {
+    display: flex;
+    flex-direction: column; }
+    .index__main .bloque2 .menu .dos-opciones {
+      display: flex;
+      flex-direction: row; }
+      .index__main .bloque2 .menu .dos-opciones .opciones-menu .imagenes-menu {
+        width: 230px;
+        height: 230px; }
+  .index__main .bloque2 .boton-reserva .botont {
+    font-size: 1.7rem; }
+  .index__main .patas-divisorias .patas {
+    width: 17%; }
+  .index__main .bloque3 .texto-reglas {
+    display: flex;
+    width: 70%; }
+  .index__main .bloque3 .reglas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .index__main .bloque3 .reglas .dos-reglas {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 90%; }
+      .index__main .bloque3 .reglas .dos-reglas .regla .imagen-regla {
+        width: 60%; } }
