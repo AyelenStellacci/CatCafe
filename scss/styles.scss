@@ -225,7 +225,6 @@
             font-family: $letra-textos;
             text-align: justify;
             color: black;
-            width: 85%;
         }
         .nosotros-texto{
             padding: 40px 30px 30px 70px;
@@ -236,6 +235,9 @@
                 flex-direction: column;
                 align-items: center;
                 width: 60%;
+                p{
+                    width: 85%;
+                }
             }
             .imagen-animada{
                 display: flex;
@@ -251,12 +253,20 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             padding: 30px 0px 20px 0px;
-            .imagenes-gatos{
+            .div-michi{
+                display: flex;
+                flex-direction: column;
+                width: 25%;
                 margin: 20px;
-                width: 20%;
-                height: 20%;
+                p{
+                    text-align: center;
+                }
+                .imagenes-gatos{
+                    margin-bottom: 15px;
+                    width: 100%;
+                }
             }
         }
     }
@@ -333,7 +343,13 @@
     .nosotros-imagenes{
         display: flex;
         flex-direction: column;
-}
+        .div-michi{
+            display: flex;
+            align-items: center;
+            width: 90%;
+            margin: 25px;
+        }
+    }
 }
 
 
@@ -392,13 +408,6 @@
     .nosotros{
         &__main{
             @include nosotros-mobile;
-            .nosotros-imagenes{
-                width: 100%;
-                .imagenes-gatos{
-                    width: 90%;
-                    height: 90%;
-                }
-            }
         }
     }
 }
@@ -455,10 +464,10 @@
         &__main{
             @include nosotros-mobile;
             .nosotros-imagenes{
-                width: 100%;
-                .imagenes-gatos{
-                    width: 80%;
-                    height: 80%;
+                .div-michi{
+                    .imagenes-gatos{
+                        width: 80%;
+                    }
                 }
             }
         }
@@ -548,9 +557,8 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 width: 100%;
-                .imagenes-gatos{
+                .div-michi{
                     width: 40%;
-                    height: 40%;
                 }
             }
         }
@@ -636,6 +644,23 @@
                         height: 90%;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 1900px) and (max-width: 2500px){
+    .index{
+        &__main{
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .nosotros{
+        &__main{
+            p{
+                font-size: 1.5rem;
             }
         }
     }

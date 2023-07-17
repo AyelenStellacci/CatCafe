@@ -289,8 +289,7 @@ footer {
   .nosotros__main p {
     font-family: "Zilla Slab", serif;
     text-align: justify;
-    color: black;
-    width: 85%; }
+    color: black; }
   .nosotros__main .nosotros-texto {
     padding: 40px 30px 30px 70px;
     display: flex;
@@ -300,6 +299,8 @@ footer {
       flex-direction: column;
       align-items: center;
       width: 60%; }
+      .nosotros__main .nosotros-texto .texto p {
+        width: 85%; }
     .nosotros__main .nosotros-texto .imagen-animada {
       display: flex;
       width: 40%;
@@ -311,12 +312,18 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 30px 0px 20px 0px; }
-    .nosotros__main .nosotros-imagenes .imagenes-gatos {
-      margin: 20px;
-      width: 20%;
-      height: 20%; }
+    .nosotros__main .nosotros-imagenes .div-michi {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      margin: 20px; }
+      .nosotros__main .nosotros-imagenes .div-michi p {
+        text-align: center; }
+      .nosotros__main .nosotros-imagenes .div-michi .imagenes-gatos {
+        margin-bottom: 15px;
+        width: 100%; }
 
 /* MIXINS */
 /* MEDIA QUERIES */
@@ -385,11 +392,11 @@ footer {
   .nosotros__main .nosotros-imagenes {
     display: flex;
     flex-direction: column; }
-  .nosotros__main .nosotros-imagenes {
-    width: 100%; }
-    .nosotros__main .nosotros-imagenes .imagenes-gatos {
+    .nosotros__main .nosotros-imagenes .div-michi {
+      display: flex;
+      align-items: center;
       width: 90%;
-      height: 90%; } }
+      margin: 25px; } }
 
 @media (min-width: 541px) and (max-width: 720px) {
   .index__main .carousel .c-item {
@@ -453,11 +460,13 @@ footer {
   .nosotros__main .nosotros-imagenes {
     display: flex;
     flex-direction: column; }
-  .nosotros__main .nosotros-imagenes {
-    width: 100%; }
-    .nosotros__main .nosotros-imagenes .imagenes-gatos {
-      width: 80%;
-      height: 80%; } }
+    .nosotros__main .nosotros-imagenes .div-michi {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      margin: 25px; }
+  .nosotros__main .nosotros-imagenes .div-michi .imagenes-gatos {
+    width: 80%; } }
 
 @media (min-width: 720px) and (max-width: 991px) {
   .index__main .carousel .c-item {
@@ -518,14 +527,18 @@ footer {
   .nosotros__main .nosotros-imagenes {
     display: flex;
     flex-direction: column; }
+    .nosotros__main .nosotros-imagenes .div-michi {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      margin: 25px; }
   .nosotros__main .nosotros-imagenes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%; }
-    .nosotros__main .nosotros-imagenes .imagenes-gatos {
-      width: 40%;
-      height: 40%; } }
+    .nosotros__main .nosotros-imagenes .div-michi {
+      width: 40%; } }
 
 @media (min-width: 992px) and (max-width: 1100px) {
   .index__main .carousel .c-item {
@@ -568,3 +581,9 @@ footer {
     .nosotros__main .nosotros-texto .imagen-animada img {
       width: 90%;
       height: 90%; } }
+
+@media (min-width: 1900px) and (max-width: 2500px) {
+  .index__main p {
+    font-size: 1.5rem; }
+  .nosotros__main p {
+    font-size: 1.5rem; } }
