@@ -379,6 +379,9 @@ footer {
         width: 80%; }
     .index__main .patas-divisorias .patas {
       width: 35%; }
+  .nosotros__main p {
+    width: 100%;
+    font-size: 1.2rem; }
   .nosotros__main .nosotros-texto {
     padding: 0px;
     display: flex;
@@ -447,6 +450,9 @@ footer {
       width: 70%; }
   .index__main .patas-divisorias .patas {
     width: 35%; }
+  .nosotros__main p {
+    width: 100%;
+    font-size: 1.2rem; }
   .nosotros__main .nosotros-texto {
     padding: 0px;
     display: flex;
@@ -514,6 +520,9 @@ footer {
       align-items: center; }
       .index__main .bloque4 .michis .michi-individual {
         width: 60%; }
+  .nosotros__main p {
+    width: 100%;
+    font-size: 1.2rem; }
   .nosotros__main .nosotros-texto {
     padding: 0px;
     display: flex;
@@ -584,6 +593,6 @@ footer {
 
 @media (min-width: 1900px) and (max-width: 2500px) {
   .index__main p {
-    font-size: 1.5rem; }
+    font-size: 1.7rem; }
   .nosotros__main p {
-    font-size: 1.5rem; } }
+    font-size: 1.7rem; } }

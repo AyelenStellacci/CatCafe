@@ -326,6 +326,10 @@
 }
 
 @mixin nosotros-mobile{
+    p{
+        width: 100%;
+        font-size: 1.2rem;
+    }
     .nosotros-texto{
         padding: 0px;
         display: flex;
@@ -348,6 +352,7 @@
             align-items: center;
             width: 90%;
             margin: 25px;
+            
         }
     }
 }
@@ -653,14 +658,14 @@
     .index{
         &__main{
             p{
-                font-size: 1.5rem;
+                font-size: 1.7rem;
             }
         }
     }
     .nosotros{
         &__main{
             p{
-                font-size: 1.5rem;
+                font-size: 1.7rem;
             }
         }
     }
