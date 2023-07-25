@@ -218,7 +218,7 @@
             flex-direction: column;
             align-items: center;
             padding: 50px 40px 70px 40px;
-            .titulo{
+            .texto-gatos{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -227,7 +227,7 @@
                     margin: 15px 0px 20px 0px;
                 }
             }
-            .michis{
+            .fotos-gatos{
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -270,6 +270,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin-top: 20px;
                 width: 60%;
                 p{
                     width: 85%;
@@ -333,7 +334,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            .div-gato{
+            .michi-individual{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -372,6 +373,52 @@
 .desayuno{
     &__main{
         @include menu;
+        .texto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 70px 0px 40px 0px;
+            p{
+                margin-top: 15px;
+                width: 60%;
+            }
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            .bebidas{
+                display: flex;
+                justify-content: center;
+                .lista-menu{
+                    margin: 40px;
+                    h4{
+                        font-size: 2rem;
+                    }
+                    ul{
+                        li{
+                            font-family: $letra-textos;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            .comida{
+                display: flex;
+                justify-content: center;
+                .lista-menu{
+                    margin: 40px;
+                    h4{
+                        font-size: 2rem;
+                    }
+                    ul{
+                        li{
+                            font-family: $letra-textos;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
     }
     
 }
@@ -395,6 +442,9 @@
             border-radius: 20px;
             font-display: block;
                 .contacto__div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     width: 40%;
                     background-color: rgba($color: #000000, $alpha: 0.4);
                     padding: 20px;
@@ -473,7 +523,7 @@
 @mixin bloque4-mobile{
     display: flex;
     padding: 20px;
-    .michis{
+    .fotos-gatos{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -515,6 +565,28 @@
     }
 }
 
+@mixin menu-tablet{
+    
+        .menu{
+            display: flex;
+            flex-direction: column;
+            .dos-opciones{
+                display: flex;
+                flex-direction: row;
+                .opciones-menu{
+                    .imagenes-menu{
+                        width: 230px;
+                        height: 230px;
+                    }
+                }
+            }
+        }
+    .boton-reserva{
+        .botont{
+            font-size: 1.7rem;
+        }
+    }
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 300px) and (max-width: 540px){
@@ -554,7 +626,7 @@
             }
             .bloque4{
                 @include bloque4-mobile;
-                .michis{
+                .fotos-gatos{
                     .michi-individual{
                         width: 80%;
                     }
@@ -571,6 +643,58 @@
     .nosotros{
         &__main{
             @include nosotros-mobile;
+        }
+    }
+    .menu{
+        &__main{
+            .bloque-menu{
+                .menu{
+                    display: flex;
+                    flex-direction: column;
+                    .dos-opciones{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+    .gatos{
+        &__main{
+            .texto-gatos{
+                margin: 20px;
+                h2{
+                    font-size: 1.7rem;
+                }
+            }
+            .fotos-gatos{
+                display: flex;
+                flex-direction: column;
+                .michi-individual{
+                    width: 90%;
+                }
+            }
+            .div-reglas{
+                @include bloque3-mobile;
+                .reglas{
+                    .dos-reglas{
+                        .regla{
+                            .imagen-regla{
+                                width: 70%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contacto{
+        &__body{
+            main{
+                .contacto__div{
+                    width: 80%;
+                }
+            }
         }
     }
 }
@@ -610,7 +734,7 @@
             }
             .bloque4{
                 @include bloque4-mobile;
-                .michis{
+                .fotos-gatos{
                     .michi-individual{
                         width: 70%;
                     }
@@ -635,9 +759,61 @@
             }
         }
     }
+    .menu{
+        &__main{
+            .bloque-menu{
+                .menu{
+                    display: flex;
+                    flex-direction: column;
+                    .dos-opciones{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+    .gatos{
+        &__main{
+            .texto-gatos{
+                margin: 20px;
+                h2{
+                    font-size: 1.7rem;
+                }
+            }
+            .fotos-gatos{
+                display: flex;
+                flex-direction: column;
+                .michi-individual{
+                    width: 90%;
+                }
+            }
+            .div-reglas{
+                @include bloque3-mobile;
+                .reglas{
+                    .dos-reglas{
+                        .regla{
+                            .imagen-regla{
+                                width: 70%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contacto{
+        &__body{
+            main{
+                .contacto__div{
+                    width: 70%;
+                }
+            }
+        }
+    }
 }
 
-@media (min-width: 720px) and (max-width: 991px){
+@media (min-width: 721px) and (max-width: 991px){
     .index{
         &__main{
             .carousel{
@@ -702,10 +878,10 @@
                 }
             }
             .bloque4{
-                @include bloque4-mobile;
-                .michis{
+                padding: 70px 20px 50px 20px;
+                .fotos-gatos{
                     .michi-individual{
-                        width: 60%;
+                        width: 35%
                     }
                 }
             }
@@ -721,6 +897,55 @@
                 width: 100%;
                 .div-michi{
                     width: 40%;
+                }
+            }
+        }
+    }
+    .menu{
+        &__main{
+            background-color: $color-fondo;
+            align-items: center;
+            .bloque-menu{
+                @include  menu-tablet;
+            }
+        }
+    }
+    .gatos{
+        &__main{
+            .fotos-gatos{
+                .michi-individual{
+                    width: 40%;
+                }
+            }
+            .div-reglas{
+                .texto-reglas{
+                    display: flex;
+                    width: 80%;
+                }
+                .reglas{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .dos-reglas{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        width: 90%;
+                        .regla{
+                            .imagen-regla{
+                                width: 60%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contacto{
+        &__body{
+            main{
+                .contacto__div{
+                    width: 60%;
                 }
             }
         }
@@ -744,25 +969,9 @@
                 }
             }
             .bloque2{
-                .menu{
-                    display: flex;
-                    flex-direction: column;
-                    .dos-opciones{
-                        display: flex;
-                        flex-direction: row;
-                        .opciones-menu{
-                            .imagenes-menu{
-                                width: 230px;
-                                height: 230px;
-                            }
-                        }
-                    }
-                }
-                .boton-reserva{
-                    .botont{
-                        font-size: 1.7rem;
-                    }
-                }
+                background-color: $color-fondo;
+                align-items: center;
+                @include  menu-tablet;
             }
             .patas-divisorias{
                 .patas{
@@ -804,6 +1013,42 @@
                     img{
                         width: 90%;
                         height: 90%;
+                    }
+                }
+            }
+        }
+    }
+    .menu{
+        &__main{
+            background-color: $color-fondo;
+            align-items: center;
+            .bloque-menu{
+                @include  menu-tablet;
+            }
+        }
+    }
+    .gatos{
+        &__main{
+            
+            .div-reglas{
+                .texto-reglas{
+                    display: flex;
+                    width: 80%;
+                }
+                .reglas{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .dos-reglas{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        width: 90%;
+                        .regla{
+                            .imagen-regla{
+                                width: 60%;
+                            }
+                        }
                     }
                 }
             }
