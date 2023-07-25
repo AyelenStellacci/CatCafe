@@ -319,6 +319,7 @@
 
 .gatos{
     &__main{
+        background-color: $color-fondo;
         .texto-gatos{
             display: flex;
             flex-direction: column;
